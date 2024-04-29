@@ -1,0 +1,37 @@
+
+<!-- width = largura e height = altura. define espaço na tela para fazer os desenhos -->
+<!-- var pincel = tela.getContext("2d") = selecionando o pincel nesse caso foi 2D-->
+<!-- fillRect(x inicial = 0, y inicial = 0, x final = 600, y final = 400) precisa de algumas informações para conseguir desenhar o retângulo, que estarão na ordem: posição inicial X do “pincel”, posição inicial Y do “pincel”, posição final X do “pincel”, posição final Y do “pincel”.-->
+<!-- pincel.fillStyle = estilo de prenchimento. ql tinta vai ser utilizada ( vc tem q escrever ql a cor vc qr)-->
+<!-- primeiro vc escolhe a cor = ppincel.fillStyle = "lightgrey";
+     depois vc escolhe onde pintar = pincel.fillRect(0, 0, 600, 400);)
+     essa eh a ordem que devem aparecer -->
+<!-- pincel.arc para desenhar o circulo)-->
+
+<canvas width="600" height="600"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(125, 150, 350, 300);
+
+    pincel.fillStyle = 'black';
+    pincel.fillRect(175, 200, 90, 90);
+
+    pincel.fillStyle = 'black';
+    pincel.fillRect(335, 200, 90, 90);
+
+    pincel.fillStyle = 'black';
+    pincel.fillRect(265, 290, 70, 100);
+    
+    pincel.fillStyle = 'black';
+    pincel.fillRect(230, 340, 40, 110);
+    
+    pincel.fillStyle = 'black';
+    pincel.fillRect(335, 340, 40, 110);
+    
+
+</script>

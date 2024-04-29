@@ -1,0 +1,40 @@
+
+<!-- width = largura e height = altura. define espaço na tela para fazer os desenhos -->
+<!-- var pincel = tela.getContext("2d") = selecionando o pincel nesse caso foi 2D-->
+<!-- fillRect(x inicial = 0, y inicial = 0, x final = 600, y final = 400) precisa de algumas informações para conseguir desenhar o retângulo, que estarão na ordem: posição inicial X do “pincel”, posição inicial Y do “pincel”, posição final X do “pincel”, posição final Y do “pincel”.-->
+<!-- pincel.fillStyle = estilo de prenchimento. ql tinta vai ser utilizada ( vc tem q escrever ql a cor vc qr)-->
+<!-- primeiro vc escolhe a cor = ppincel.fillStyle = "lightgrey";
+     depois vc escolhe onde pintar = pincel.fillRect(0, 0, 600, 400);)
+     essa eh a ordem que devem aparecer -->
+<!-- pincel.arc para desenhar o circulo)--Os primeiros dois parâmetros do método arc são as coordenadas X e Y do centro do círculo (no nosso caso, 300 e 200). O terceiro parâmetro é o valor do raio (no nosso caso, 100). O quarto e quinto parâmetros definem o ângulo inicial e final do círculo. Como queremos desenhar um círculo completo, os parâmetros são, respectivamente, 0 e 2 * PI (cujo valor é 3.14).-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgrey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 200, 400);
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(400, 0, 200, 400);
+
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 200);
+    pincel.lineTo(200, 400);
+    pincel.lineTo(400, 400);
+    pincel.fill();
+
+	pincel.fillStyle = 'blue';
+    pincel.beginPath();
+    pincel.arc(300, 200, 50, 0, 2*3.14);
+    pincel.fill();
+
+
+</script>

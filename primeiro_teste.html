@@ -1,0 +1,64 @@
+<meta charset="UTF-8">
+<!-- serve para corrigir a acentuação de todo texto -->
+<h1>Meu primeiro teste!</h1>
+<!-- <h1> serve para indicar que é um título e da destaque. colocar sempre na frente o texto -->
+<!-- </h1> serve para indicar o fim do título em destaquw -->
+<br> 
+<!-- <br> serve para pular/quebrar linha -->
+Seria isso um programa? Descubra visitando o Alura <a href="http://www.alura.com.br">aqui</a>!
+<!-- <a> chamado de ancora para colocar links e </a> eh pra dizer q acaba aqui-->
+<!-- href chamado de atributo -->
+<!-- o html é estatico e não dinamico. eu te tenho q alterar. -->
+<!-- script indica pro computador que em diante eh javascript e </script> e onde tem q terminar o java script -->
+<br>
+<script>
+	alert ("isso sim é um programa");
+</script>
+<!-- alert serve para mensagem abrir em pop-up -->
+<br>
+<!-- F12 ou Crtl+Shift+C é plug-in/depurador que serve para saber aonde houve problema no código, vai abrir uma janela. Vai na aba console e la vai ter em qual linha do código que está com problema -->
+<br>
+<meta charset="UTF-8">
+<script>
+    document.write("<h1>Seja bem-vindo</h1>");br   
+</script>
+ <!-- document.write serve para escrever dentro do java script --><!-- var é chamado de variavel. variavel não fica entre "". var vc usa apenas 1x, não precisa ficar repetindo.
+ exemplo: 
+ <script>
+    var ano = 2016;
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+ </script> -->
+ <br>
+ <!--Math.round() serve para redondar a media de um calculo.
+ 	exemplo:
+ 	<script>
+ 	var media = (39 + 20 + 41)/3;
+
+document.write('A média das idades é ' + Math.round(media));
+</script> -->
+<!-- a tag <hr> serve para colocar uma linha horizontal no texto -->
+<!-- as tagges <big> e </big> serve para aumentar o tamanho da fonte do texto. segue exemplo para ve como se coloca no texto. ex: mostra("<big>Eu nasci em : </big>" + (ano - 25));  -->
+<!-- Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, fazemos uso da função prompt. -->
+<!-- Como a função prompt sempre retorna o que digitamos no formato texto, ou seja, como um string, é uma boa prática sempre convertermos o valor digitado para número quando nossa intenção é ler um número. Vamos analisar esta instrução: Exemplo:
+
+var convidados = parseInt(prompt("Número de convidados"));
+
+A função prompt retorna o que digitamos como string e esse retorno é passado para parseInt. É esta função que recebe uma string e a converte para número. Agora, como temos dois números ligados, não acontecerá mais a concatenação, mas sim a soma. -->
+<!-- Exemplo:
+var a = parseInt("10");
+var b = parseInt("Calopsita");
+var c = parseInt(10);
+
+Então:
+A variável a recebe o número 10 retornado por parseInt. Veja que a função esta recebendo a string "10". Ela converte a string em um número.
+
+A variável b recebe NaN (not a number) retornado por parseInt. Isso é verdade, porque parseInt está recebendo a string "Calopsita". É impossível converter esse texto para número, pois não há uma representação numérica para ele, como foi o caso de a.
+
+A variável c recebe 10, número, retornado por parseInt. Quando parseInt recebe um número e não uma string, ele devolve o mesmo número, ou seja, não realiza conversão alguma. Não dá erro, funciona.-->
